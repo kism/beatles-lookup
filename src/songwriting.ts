@@ -224,7 +224,7 @@ export function drawSongwritingPage(): void {
   )
   chart.append(pie(), legend(), caption)
   // [hide chart]/[show chart] beside the title, like the Contents box's [hide], only with a slice to show instead
-  const title = el('h1', '', { textContent: 'Songwriting ' })
+  const title = el('h1', '', { textContent: 'The Beatles Songwriting ' })
   const chartToggle = el('span', 'heading-toggle')
   chartToggle.append(
     ...toggle(showChart ? 'hide chart' : 'show chart', () => {
