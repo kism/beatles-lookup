@@ -1,0 +1,43 @@
+---
+name: Type Check
+
+on:
+  push:
+    branches:
+      - main
+      - test
+    paths-ignore: &paths-ignore
+      - '**/README*'
+      - '.github/workflows/lint.yml'
+      - '.github/workflows/lint_py.yml'
+      - '.github/workflows/build.yml'
+  pull_request:
+    paths-ignore: *paths-ignore
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  tsc:
+    name: tsc
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: Setup pnpm
+        uses: pnpm/setup@v3 # Version comes from packageManager in package.json
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Check types
+        run: pnpm typecheck

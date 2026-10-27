@@ -1,0 +1,48 @@
+{
+  "lennon": {
+    "name": "John Lennon",
+    "born": "9 October 1940",
+    "birthPlace": "Liverpool, England",
+    "instruments": [
+      "Vocals",
+      "guitar",
+      "keyboards",
+      "harmonica"
+    ]
+  },
+  "mccartney": {
+    "name": "Paul McCartney",
+    "born": "18 June 1942",
+    "birthPlace": "Liverpool, England",
+    "instruments": [
+      "Vocals",
+      "bass guitar",
+      "guitar",
+      "keyboards",
+      "drums",
+      "piano"
+    ]
+  },
+  "harrison": {
+    "name": "George Harrison",
+    "born": "25 February 1943",
+    "birthPlace": "Liverpool, England",
+    "instruments": [
+      "Guitar",
+      "vocals",
+      "sitar",
+      "keyboards",
+      "ukulele",
+      "bass guitar"
+    ]
+  },
+  "starr": {
+    "name": "Ringo Starr",
+    "born": "7 July 1940",
+    "birthPlace": "Liverpool, England",
+    "instruments": [
+      "Drums",
+      "vocals"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "beatles-lookup",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.11.2",
+  "scripts": {
+    "dev": "pnpm data && vite",
+    "build": "./scripts/build.sh",
+    "preview": "vite preview",
+    "typecheck": "pnpm data && tsc",
+    "lint": "biome check",
+    "format": "biome check --write",
+    "data": "python3 scripts/data/build.py",
+    "scrape": "uv run scripts/data/scrape.py",
+    "verify": "uv run scripts/data/verify.py",
+    "lint:py": "uv run ruff check && uv run ruff format --check && uv run ty check",
+    "art": "./scripts/art.sh"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.3",
+    "@cloudflare/vite-plugin": "^1.65.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "wrangler": "^4.152.0"
+  }
+}

@@ -1,0 +1,25 @@
+[project]
+name = "beatles-lookup-data"
+version = "0.1.0"
+description = "Scripts that scrape Wikipedia and build the site's data (see README)"
+# build.py runs on the system python3 during `pnpm build` (stdlib only), so CI and Cloudflare need 3.14+ too
+requires-python = ">=3.14"
+dependencies = ["beautifulsoup4"]
+
+[dependency-groups]
+dev = ["ruff", "ty"]
+
+[tool.ruff]
+line-length = 120
+include = ["scripts/**/*.py"]
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF"]
+# En dashes are deliberate: Wikipedia uses them in credits and personnel
+ignore = ["RUF001"]
+
+[tool.ty.src]
+include = ["scripts"]
