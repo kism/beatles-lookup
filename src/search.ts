@@ -60,6 +60,8 @@ export function render(): Song | undefined {
     linkMembers($('result'))
   }
   $('clear').hidden = !input.value
+  // As on Wikipedia: "Article name - Wikipedia"
+  document.title = `${song?.title ?? 'Category:The Beatles songs'} - Beatles Lookup`
   if (!song) filterCategory()
   return song
 }

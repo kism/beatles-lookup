@@ -15,11 +15,8 @@ export function route(): void {
   for (const tab of document.querySelectorAll<HTMLAnchorElement>('#tabs a')) {
     tab.toggleAttribute('aria-current', tab.dataset.page === current)
   }
-  document.title = {
-    search: 'Who wrote that Beatles song?',
-    releases: 'Beatles releases',
-    songwriting: 'Beatles songwriting',
-  }[current]
+  // The search page's title follows the song, so render() sets it
+  if (current !== 'search') document.title = `${current === 'releases' ? 'Releases' : 'Songwriting'} - Beatles Lookup`
   // The search box is on every page, but only holds a song on the search page
   input.value = new URLSearchParams(location.search).get('song') ?? ''
   $('clear').hidden = !input.value
