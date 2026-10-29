@@ -12,7 +12,7 @@ function print_heading() {
 print_heading "Biome"
 pnpm format
 
-print_heading "Ruff & ty"
+print_heading "Ruff and ty"
 pnpm lint:py
 
 print_heading "tsc"

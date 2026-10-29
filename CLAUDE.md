@@ -16,7 +16,7 @@ A static single-page site: type a Beatles song and see who wrote it, who sang it
 - `pnpm scrape`: `scripts/data/scrape.py` (uv, bs4) fetches whatever is missing into `data/cache/` (gitignored) and rewrites `data/scraped/`.
 - `pnpm verify`: `scripts/data/verify.py` (uv) checks that every curated `quote` is in its cached article, sentence by sentence, comparing words only.
 - `pnpm lint`: `biome check`, which covers both linting and formatting. `pnpm format` applies the fixes.
-- CI has one workflow per check in `.github/workflows/`: `lint.yml` (Biome), `lint_py.yml` (Ruff and ty), `check_types.yml` (tsc) and `build.yml`. `scripts/run-ci-local.sh` runs them all in order, formatting as it goes.
+- CI workflows are in `.github/workflows/`: `lint.yml` (Biome, and Ruff and ty as parallel jobs), `check_types.yml` (tsc) and `build.yml`. `scripts/run-ci-local.sh` runs them all in order, formatting as it goes.
 - pnpm only runs the dependency install scripts approved in `pnpm-workspace.yaml` (`allowBuilds`). If a new dependency needs one, `pnpm install` stops and names it; approve it with `pnpm approve-builds <package>`.
 - There are no tests.
 

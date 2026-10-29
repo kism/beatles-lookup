@@ -9,7 +9,6 @@ on:
     paths-ignore: &paths-ignore
       - '**/README*'
       - '.github/workflows/lint.yml'
-      - '.github/workflows/lint_py.yml'
       - '.github/workflows/check_types.yml'
   pull_request:
     paths-ignore: *paths-ignore
