@@ -1,7 +1,6 @@
 # Beatles Lookup
 
 [![Lint](https://github.com/kism/beatles-lookup/actions/workflows/lint.yml/badge.svg)](https://github.com/kism/beatles-lookup/actions/workflows/lint.yml)
-[![Lint Python](https://github.com/kism/beatles-lookup/actions/workflows/lint_py.yml/badge.svg)](https://github.com/kism/beatles-lookup/actions/workflows/lint_py.yml)
 [![Type Check](https://github.com/kism/beatles-lookup/actions/workflows/check_types.yml/badge.svg)](https://github.com/kism/beatles-lookup/actions/workflows/check_types.yml)
 [![Build](https://github.com/kism/beatles-lookup/actions/workflows/build.yml/badge.svg)](https://github.com/kism/beatles-lookup/actions/workflows/build.yml)
 [![site](https://img.shields.io/website?url=https%3A%2F%2Fbeatles.autist.network)](https://beatles.autist.network/)
