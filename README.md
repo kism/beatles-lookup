@@ -19,7 +19,6 @@ Everything comes from Wikipedia (CC BY-SA), and each song page links the article
 - Node, the version in `.nvmrc`. With [nvm](https://github.com/nvm-sh/nvm): `nvm use`
 - [pnpm](https://pnpm.io/installation): `npm i -g pnpm`. The version is pinned in `packageManager` in `package.json`
 - `python3`, which builds the data during `pnpm dev` and `pnpm build`
-- [uv](https://docs.astral.sh/uv/), only for scraping, verifying and linting the Python
 
 ## Run
 

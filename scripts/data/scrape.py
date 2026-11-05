@@ -199,7 +199,7 @@ def join(cell):
         return ''
     out = parts[0]
     for prev, p in itertools.pairwise(parts):
-        out += (' ' if p[0].islower() or p[0] == '(' or prev.endswith(('/', '.')) else ', ') + p
+        out += (' ' if p[0].islower() or p[0] == '(' or prev.endswith(('/', '.', ',')) else ', ') + p
     return out
 
 

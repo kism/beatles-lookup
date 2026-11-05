@@ -381,7 +381,7 @@
     "album": "Abbey Road",
     "year": 1969,
     "credit": "Lennon–McCartney",
-    "vocals": "McCartney (with Lennon,, Harrison, and Starr)",
+    "vocals": "McCartney (with Lennon, Harrison, and Starr)",
     "personnel": [
       "Paul McCartney – lead vocal, piano, rhythm guitar, chorus vocal",
       "John Lennon – chorus vocal",
@@ -422,13 +422,13 @@
     "credit": "Lennon–McCartney",
     "vocals": "Lennon (with Yoko Ono )",
     "personnel": [
-      "John Lennon – lead vocal, acoustic guitar, Hammond organ, Mellotron",
+      "John Lennon – lead vocal, acoustic guitar, organ",
       "Paul McCartney – backing vocals, bass guitar",
       "George Harrison – backing vocals, acoustic guitar",
       "Ringo Starr – backing vocals, drums, tambourine",
-      "Chris Thomas – Mellotron",
-      "Yoko Ono – voice of \"mummy\", backing vocals",
-      "Maureen Starkey (and others) – backing vocals"
+      "Chris Thomas – mellotron, backing vocals",
+      "Yoko Ono – vocal, backing vocals",
+      "Maureen Starkey and others – backing vocals"
     ]
   },
   {
@@ -1325,7 +1325,7 @@
     "personnel": [
       "John Lennon – vocal, rhythm guitar, handclaps",
       "Paul McCartney – vocal, bass guitar, handclaps",
-      "George Harrison – lead guitar, handclaps",
+      "George Harrison – harmony vocal, lead guitar, handclaps",
       "Ringo Starr – drums, handclaps"
     ]
   },
@@ -1889,7 +1889,9 @@
     "credit": "Lennon–McCartney",
     "vocals": "McCartney",
     "personnel": [
-      "Paul McCartney – double-tracked lead vocals, piano, electric guitar, bass, drums, handclaps",
+      "Paul McCartney – double-tracked lead vocals, piano, bass, drums, handclaps",
+      "George Harrison – electric guitar",
+      "Ringo Starr – drums",
       "Bernard Mille, Dennis McConnell, Lou Sofier, Les Maddox – violins",
       "Leo Birnbaum, Henry Myerscough – violas",
       "Reginald Kilby, Frederick Alexander, Peter Halling – cellos",
@@ -2119,7 +2121,7 @@
     "credit": "Lennon–McCartney",
     "vocals": "McCartney",
     "personnel": [
-      "Paul McCartney – lead vocals backing vocals, bass",
+      "Paul McCartney – lead and backing vocals, bass",
       "John Lennon – backing vocals, piano",
       "George Harrison – backing vocals, electric guitar",
       "Ringo Starr – drums",
@@ -2279,7 +2281,7 @@
       "Ringo Starr – drums",
       "McCartney – backing vocal, lead guitar, piano",
       "Harrison – backing vocal",
-      "Starr? – tambourine, maracas, cowbell"
+      "? – tambourine, maracas, cowbell"
     ]
   },
   {
@@ -2502,7 +2504,7 @@
       "McCartney – lead guitar, piano",
       "Lennon – backing vocal",
       "Harrison – backing vocal",
-      "Starr? – tambourine, maracas, cowbell"
+      "? – tambourine, maracas, cowbell"
     ]
   },
   {
@@ -2679,8 +2681,8 @@
     "credit": "Harrison",
     "vocals": "Harrison",
     "personnel": [
-      "George Harrison – lead vocals, lead guitar",
-      "John Lennon – backing vocals, rhythm guitar",
+      "George Harrison – lead vocals, rhythm & lead guitars",
+      "John Lennon – backing vocals",
       "Paul McCartney – backing vocals, bass guitar, lead guitar (solo)",
       "Ringo Starr – drums, cowbell, tambourine"
     ]
@@ -3035,8 +3037,8 @@
     "vocals": "Lennon and McCartney",
     "personnel": [
       "John Lennon – lead vocals, rhythm guitar",
-      "Paul McCartney – lead vocals, bass",
-      "George Harrison – harmony vocals, double-tracked lead guitar",
+      "Paul McCartney – lead vocals, bass guitar",
+      "George Harrison – lead guitar",
       "Ringo Starr – drums, packing case"
     ]
   },

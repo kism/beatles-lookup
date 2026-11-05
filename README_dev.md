@@ -64,7 +64,7 @@ so add domains there, not in the dashboard.
 
 The site's data is built from Wikipedia (CC BY-SA) in two stages:
 
-```
+```text
 data/cache/          raw Wikipedia downloads (gitignored, re-fetched when missing)
 data/scraped/        what the scraper extracted, as-is        ← pnpm scrape
 data/curated.json    hand edits, keyed by song title
@@ -114,10 +114,12 @@ An empty diff means Wikipedia still says what the site says. Any lines that do c
 **Checking the quotes.** `pnpm verify` looks up each curated `quote` in its article (from `data/cache/`, fetching it if missing) and prints any sentence it can't find, exiting with an error. It compares words only, so quote marks and blockquote formatting don't matter, and a quote made of two sentences from different places is checked one sentence at a time. To check against the live articles, delete `data/cache/` first.
 
 **Checks built into the scripts.**
+
 - `scrape.py` asserts that the singles filter gives exactly the 22 UK singles, that every album has a release date, and that every Beatle has instruments.
 - `build.py` exits if `data/curated.json` names a song that isn't in the scraped data (e.g. after a title changes on Wikipedia), or if a song is on none of the releases.
 
 **What isn't checked by a script.**
+
 - Whether `writers` is a fair reading of its quote. That was done by hand; the quote is there so you can judge it.
 - Four `writers` edits have no quote: "Komm, gib mir deine Hand", "Sie liebt dich", "Maggie Mae" and "What Goes On".
 - Six `personnel` lists are overridden in `data/curated.json`. "Bad Boy", "Dizzy Miss Lizzy", "Twist and Shout" and "You Really Got a Hold on Me" are covers whose article lists the original artist's line-up. "That'll Be the Day" and "Hallelujah, I Love Her So" are Anthology 1 tracks whose article personnel is for another recording.
