@@ -14,6 +14,13 @@ Everything comes from Wikipedia (CC BY-SA), and each song page links the article
 - **Songs:** All the songs that I consider the core catalogue. Credit, vocals, album and year come from [List of songs recorded by the Beatles](https://en.wikipedia.org/wiki/List_of_songs_recorded_by_the_Beatles). Personnel comes from each song's own article; most Personnel sections there come from Ian MacDonald's _Revolution in the Head_.
 - **Who actually wrote it:** in the liner notes, Lennon and McCartney were generally combined into the 'Lennon–McCartney' credit. Each song has the 'real writer' and is backed by a sentence quoted word for word from the song's article, shown as a footnote on the song page.
 
+## AI Disclosure
+
+- None of the information is generated with AI
+- I have put in verification of the result data, comparing it to the raw Wikipedia data.
+- CSS is partially from old (2004) Wikipedia, but modified by Claude
+- Claude was used to create the majority of the scraper and frontend logic
+
 ## Prerequisites
 
 - Node, the version in `.nvmrc`. With [nvm](https://github.com/nvm-sh/nvm): `nvm use`
