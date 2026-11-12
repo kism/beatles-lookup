@@ -44,6 +44,7 @@ ALBUMS = [
     ('Anthology_1', 'Anthology 1', 'compilation', None, True, None),
     ('Anthology_2', 'Anthology 2', 'compilation', None, True, None),
     ('Anthology_3', 'Anthology 3', 'compilation', None, True, None),
+    ('Anthology_4', 'Anthology 4', 'compilation', None, True, None),
 ]
 
 
@@ -332,7 +333,7 @@ def scrape_singles(songs):
 
 
 # Albums whose tracks outside the core catalogue are added as songs (outtakes, covers, early recordings)
-EXTRA_SONGS_FROM = ['Anthology_1']
+EXTRA_SONGS_FROM = ['Anthology_1', 'Anthology_4']
 BEATLES = {
     'John Lennon': 'Lennon',
     'Paul McCartney': 'McCartney',
@@ -366,9 +367,14 @@ def scrape_extras(songs):
         wt = wikitext(page)
         album = page.replace('_', ' ')
         year = int(released(wt)[:4])
+        default = ''
         for block in re.findall(r'\{\{\s*track ?list(?:ing)?\s*\n(.*?)\n\}\}', wt, re.S | re.I):
             params = dict(re.findall(r'^\s*\|\s*(\w+?)\s*=[ \t]*(.*)$', block, re.M))
-            default = 'Lennon–McCartney' if 'Lennon–McCartney' in params.get('all_writing', '') else ''
+            # A later disc's block leaves out all_writing and keeps the first disc's
+            if 'all_writing' in params:
+                default = 'Lennon–McCartney' if 'Lennon–McCartney' in params['all_writing'] else ''
+            # Anthology 4's extra column is the original release, not the recording date
+            dated = params.get('extra_column', '').startswith('Recording')
             for n in sorted({int(k[5:]) for k in params if re.fullmatch(r'title\d+', k)}):
                 raw = params[f'title{n}']
                 title = clean(raw).strip('"')
@@ -378,7 +384,9 @@ def scrape_extras(songs):
                 link = re.match(r'\[\[([^|\]]+)', raw)
                 article = link.group(1).replace(' ', '_') if link else None
                 anchor = article.split('#')[1].replace('_', ' ') if article and '#' in article else None
-                recorded = re.sub(r'\{\{\s*c\.\s*\|\s*(\d{4})\s*\}\}', r'c. \1', params.get(f'extra{n}', ''))
+                extra = params.get(f'extra{n}', '') if dated else ''
+                recorded = re.sub(r'\{\{\s*c\.\s*\|\s*(\d{4})\s*\}\}', r'c. \1', extra)
+                known.add(norm(title))  # Free as a Bird is on Anthology 1 and 4
                 extras.append(
                     {
                         'title': title,

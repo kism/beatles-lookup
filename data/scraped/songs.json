@@ -3623,5 +3623,76 @@
       "https://en.wikipedia.org/wiki/Anthology_1",
       "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_the_Beatles"
     ]
+  },
+  {
+    "title": "(You're So Square) Baby I Don't Care",
+    "article": "(You're_So_Square)_Baby_I_Don't_Care",
+    "album": "Anthology 4",
+    "year": 2025,
+    "credit": "Jerry Leiber & Mike Stoller",
+    "vocals": "McCartney",
+    "personnel": [],
+    "note": "Studio jam",
+    "recorded": null,
+    "listedOn": [
+      "https://en.wikipedia.org/wiki/Anthology_4",
+      "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_the_Beatles"
+    ]
+  },
+  {
+    "title": "Can You Take Me Back?",
+    "article": "Cry_Baby_Cry#\"Can_You_Take_Me_Back?\"",
+    "album": "Anthology 4",
+    "year": 2025,
+    "credit": "Lennon–McCartney",
+    "vocals": "McCartney",
+    "personnel": [],
+    "note": "Take 1",
+    "recorded": null,
+    "listedOn": [
+      "https://en.wikipedia.org/wiki/Anthology_4",
+      "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_the_Beatles"
+    ]
+  },
+  {
+    "title": "Real Love",
+    "article": "Real_Love_(Beatles_song)",
+    "album": "Anthology 4",
+    "year": 2025,
+    "credit": "Lennon",
+    "vocals": "Lennon",
+    "personnel": [
+      "John Lennon – lead vocals, acoustic guitar",
+      "John Lennon – double-tracked lead vocals, piano (1979 and 1980 demo sessions)",
+      "Paul McCartney – backing vocals, acoustic guitar, piano, bass guitar, double bass, harmonium, harpsichord, percussion",
+      "George Harrison – backing vocals, electric guitars, slide guitar, acoustic guitar, banjolele, percussion",
+      "Ringo Starr – drums, percussion"
+    ],
+    "note": "2025 Mix",
+    "recorded": null,
+    "listedOn": [
+      "https://en.wikipedia.org/wiki/Anthology_4",
+      "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_the_Beatles"
+    ]
+  },
+  {
+    "title": "Now and Then",
+    "article": "Now_and_Then_(Beatles_song)",
+    "album": "Anthology 4",
+    "year": 2025,
+    "credit": "Lennon, McCartney, Harrison & Starkey",
+    "vocals": "Lennon and McCartney",
+    "personnel": [
+      "John Lennon – lead and backing vocals",
+      "Paul McCartney – lead and backing vocals, bass, lap steel guitar, acoustic rhythm guitar, piano, electric harpsichord, shaker",
+      "George Harrison – backing vocals, acoustic and electric rhythm guitars",
+      "Ringo Starr – backing vocals, drums, tambourine, shaker"
+    ],
+    "note": null,
+    "recorded": null,
+    "listedOn": [
+      "https://en.wikipedia.org/wiki/Anthology_4",
+      "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_the_Beatles"
+    ]
   }
 ]
